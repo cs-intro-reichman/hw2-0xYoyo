@@ -2,5 +2,25 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
+		int numOfGenerations = Integer.parseInt(args[0]);
+		int greaterThanHalf = 0;
+		int lessOrEqualToHalf = 0;
+		for (int i = 0; i < numOfGenerations; i++){
+			double num = Math.random();
+			if(num>0.5){
+				greaterThanHalf++;
+			} else{
+				lessOrEqualToHalf++;
+			}
+		}
+			System.out.println("> 0.5: " + greaterThanHalf + " times");
+			System.out.println("<= 0.5: " + lessOrEqualToHalf + " times");
+			double ratio = -1;
+			if (lessOrEqualToHalf != 0) {
+				ratio = (double) greaterThanHalf / lessOrEqualToHalf;
+			}
+			if (ratio != -1){
+				System.out.print("Ratio: " + ratio);
+			}
 	}
 }
