@@ -11,7 +11,7 @@ public class Cheers {
                 if(anLetters.indexOf(currentLetter) != -1){
                         System.out.println("Give me an " + currentLetter + ": " + currentLetter + "!");
                 } else{
-                        System.out.println("Give me a " + currentLetter + ": " + currentLetter + "!");
+                        System.out.println("Give me a  " + currentLetter + ": " + currentLetter + "!");
                 }
             }
             System.out.println("What does that spell?");
